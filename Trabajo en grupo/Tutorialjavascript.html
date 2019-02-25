@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <title>Manual Javascript</title>
@@ -63,19 +63,38 @@
         <p1>Lo primero que debemos memorizar o tener muy en cuenta respecto al JavaScript
             son sus etiquetas</p1><br>
         <p1>Las etiquetas en JavaScript son:</p1><br>
-        <p2> <script> </script> </p2>
+        <p2> &lt; script &gt; &nbsp;&nbsp;&nbsp;&nbsp; &lt; /script &gt; </p2><br>
         <p1> y se puede incluye en cualquier parte del documento html. Pero se recomienda incluirlas  dentro de la cabecera del documento (dentro de la etiqueta):</p1>
         <p2> <head> </p2> 
         
         <h1>La consola de JavaScript</h1>
 
         <p1> Una buena práctica para empezar a trabajar con JavaScript es hacerlo a través de la consola del navegador que se puede visualizar pulsando en botón derecho del ratón y pulsamos en inspeccionar y luego en la pestaña consola (En el caso de Chrome). Para poder visualizar la la información que necesitemos ver del código necesitamos conocer un comando console.log(”);</p1>
-        <p1>Ejemplo</p1><br>
-        <p1><code><b>1</b> <script> <br> 
-        <b>2</b>     console.log('Hola a todos'); <br>
-        <b>3</b> </script></code></p1>
+        <h1>Separador de instrucciones (;)</h1><br>
+        <p1>No es necesario terminar cada sentencia con el caracter de punto y coma (;)  como en la mayoría de lenguajes de programación. Aunque JavaScript no obliga a hacerlo, es conveniente hacerlo.</p1><br>
+        <h1>Comentarios en JavaScript</h1>
+        <p1>Los comentarios en el código sirven para dejar anotaciones del código sin 
+        que afecten al funcionamiento de este. JavaScript acepta dos tipos de comentario.</p1><br>
+        <p1>// incluye comentario hasta el final de la linea. </p1><br>
+        <p1>/*  comentario*/   para insertar comentarios en varias líneas</p1><br>
         
-    
-    
+        <h1><b>Variables</b></h1>
+        <p1>Las variable son “elementos” que contiene un valor fijo o dinámico y diferencian entre minusculas y mayusculas. El nombre de una variable debe empezar con una letra o con el carácter de subrayado _ (underscore/barra baja)</p1><br>
+        <p1>Existen muchos tipos de variables pero las más importantes son:</p1><br>
+
+        <p1><b>-De tipo String.</b> Son variables donde su valor es texto, que siempre debe ir 
+        dentro de ‘ ‘ (comillas simples) si dentro de este formato metemos números, PHP los reconocerá como texto, no como un número. </p1><br>
+        <p1>variablestring= ´Siempre Texto´;</p1><br>
+        <p1><b>-De tipo Integers.</b> Son variables donde su valor son números enteros con los cuales podemos hacer, entre otras cosas, operaciones matemáticas.</p1>
+        <p1> variableintegers =38; </p1><br>
+        <p1><b>-De tipo Float. </b> Son variables donde su valor son  número decimales y se comportan igual que en anterior tipo.</p1><br>
+        <p1> variablefloat =45,60;</p1><br>
+        <p1><b>-De tipo Booleanos.</b> Es un tipo de dato  que indica verdad y solo acepta 2 
+        valores TRUE o FALSE  y se usan principalmente cuando necesitamos las condicionales.</p1><br>
+        <p1>variableboolean = true;</p1><br> 
+        <p1></p1>
+
+
+
     </body>
 </html>
