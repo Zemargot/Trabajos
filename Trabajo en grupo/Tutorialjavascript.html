@@ -92,7 +92,102 @@
         <p1><b>-De tipo Booleanos.</b> Es un tipo de dato  que indica verdad y solo acepta 2 
         valores TRUE o FALSE  y se usan principalmente cuando necesitamos las condicionales.</p1><br>
         <p1>variableboolean = true;</p1><br> 
-        <p1></p1>
+        <p1>Ejemplos:</p1><br>
+        <br>
+        <br>
+        <projo><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script &gt; </b></projo><br>
+        <br>
+        <pComents><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47; &#47;las variables a diferencia de PHP se pueden declarar poniendo solo el elemento aunque se recomienda declararlas con la palabra reservada var <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#47; &#47;declaro las variables</b> </pComents> <br>
+        <pPurple><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var</b> </pPurple> <p1><b>nombre;</b></p1> <br>
+        <pPurple><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var</b> </pPurple> <p1><b>apellido;</b></p1><br>
+        <br>
+        <pComents><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#47; &#47;ahora asigno un valor a las variables </b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#47; &#47; variable tipo string = cadena de caracteres "texto" </b></pComents><br>
+        <p2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nombre = </p2> <p3>'Joaquín';</p3><br>
+        <p2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;apellido =</p2> <p3>'López';</p3><br>
+        <pComents>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47; &#47;variable tipo integers = Numeros enteros</pComents><br>
+        <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;edad</p4> <p2>=</p2> <projo>38;</projo><br>
+        <pComents>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47; &#47;variable tipo float = nuemros decimales</pComents><br>
+        <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;altura</p4> <p2>=</p2> <projo>1.72;</projo><br>
+        <pComents>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47; &#47;variable tipo boolean = valor 0/1. este valor aunque es una cadena de texto no va entre comillas</pComents><br>
+        <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;casado</p4> <p2>=</p2> <projo>true;</projo><br>
+        <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soltero</p4> <p2>=</p2> <pPurple>false;</pPurple><br>
+        <br>    
+        <pComents>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47; &#47;para comprobar que las variables funcionan usamos el comando de la consola poniendo entre los parentesis la variable</pComents><br>
+        <br>    
+        <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.</p4> <p2>log</p2><p4>(nombre);</p4><br>
+        <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.</p4><p2>log</p2><p4>(edad);</p4><br>
+        <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.</p4><p2>log</p2><p4>(casado);</p4><br>
+        <br>    
+        <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&#47;script&gt;</projo><br>
+
+
+        <h1><b>Arrays</b></h1><br>
+        <p1>Un array es una agrupación de variables que pueden ser del mismo tipo (String, integer, float…) o cada una una de un tipo diferente.
+
+        Existen tres formas de definir las variables aunque la más usada es la tercera (Tipo_3), ya que con las anteriores existe un caso que la variable si solo tiene un elemento deja de ser un array. Estos elementos tiene que ir separados con coma (,).</p1><br>
+        <p1>Así por ejemplo:</p1><br>
+            
+        <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;</projo><br>	
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_1 =</p4> <pPurple>new Array</pPurple> <p4>(elemento_1, elemento_2, elemento_3);</p4> <pComents>//Tipo 1</pComents><br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_2 =</p4> <pPurple>Array</pPurple> <p4>(elemento_1, elemento_2, elemento_3);</p4> <pComents>//Tipo 2</pComents><br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_3 = [elemento_1, elemento_2, elemento_3];</p4> <pComents>//Tipo 2</pComents><br>
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;script&gt;</projo><br>
+
+            <p1>Para acceder desde una variable a algunos de los elementos del array las debemos definir de esta forma</p1><br>
+            <br>
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;</projo><br>
+            <pPurple>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var</pPurple> <p4>dias_semana =</p4> <p3>["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];</p3><br>
+            <br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quiero_lunes = dias_semana [</p4><projo>0</projo><p4>];</p4><br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quiero_viernes = dias_semana [</p4><projo>4</projo><p4>];</p4><br>
+            <br>            
+            <pPurple>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert</pPurple><p4>(quiero_lunes);</p4><br>
+            <pPurple>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert</pPurple><p4> (quiero_viernes);</p4><br>
+            <br>            
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;script&gt;</projo><br>
+            <br>
+            <br>
+            <p1>Tengamos en cuenta que los elementos de un array se empiezan a contar desde el cero (0) y no desde el uno (1)
+            los arrays tienen unas funciones muy útiles que las complementan y que nos ayuda a realizar alguna acciones ya definidas por JavaScript.</p1><br>
+            <br>
+            <p1>Veamos las más usadas.</p1><br>
+            
+            <h2>2.2.1 añadir elementos a un array con la función push</h2><br>
+            
+            <p1>Por ejemplo, si queremos añadir un elemento llamado Juernes a nuestro ejemplo anterior y que tomaría el valor 7 lo haríamos así:</p1><br>
+            <br>
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;</projo><br>
+            <pPurple>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var</pPurple> <p4>dias_semana =[</p4> <p3>"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"</p3><p4>];</p4><br>
+            <br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dias_semana.push(</p4><p3>"Juernes"</p3><p4>);</p4><pComents>&#47;&#47;método que añade elementos al array</pComents><br>
+            <br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.</p4><p2>log</p2><p4>(dias_semana);</p4> <pComents>&#47;&#47;comprobamos que el array tiene elemento "Juernes" añadido</pComents><br>			
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;script&gt;</projo>
+            
+            <h2>2.2.2 Calcula el número de elementos de un array con la propiedad length</h2>
+            <br>
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;</projo><br>
+            <pPurple>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var</pPurple> <p4>dias_semana = [</p4><p3>"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"</p3><p4>];</p4><br>
+            <br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numero_dias</p4> <p2>=</p2> <p4>dias_semana.length;</p4><br>
+            <br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.</p4><p2>log</p2><p4>(numero_dias);</p4> <pComents>&#47;&#47;comprobamos que el array tiene elemento "Juernes" añadido</pComents><br>			
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;script&gt;</projo><br>
+            <br>
+            
+            <h2>2.2.3 Borrar elemento de un array con la función delete</h2>
+            <br>
+            <p1>Cuando se utiliza este método lo que realmente hace es eliminarlo pero deja el espacio en blanco.</p1><br>
+            <br>
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;</projo><br>
+            <pPurple>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var</pPurple> <p4>dias_semana = [</p4><p3>"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"</p3><p4>];</p4><br>
+            <br>
+            <pPurple>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete</pPurple> <p4>dias_semana [</p4><projo>3</projo><p4>];</p4> <pComents>&#47;&#47;Borramos el Jueves. Esto genera la ranura 3 vacia</pComents><br>
+            <br>
+            <p4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.</p4><p2>log</p2><p4>(dias_semana);</p4> <pComents>//comprobamos que el array tiene elemento "Juernes" añadido</pComents><br>			
+            <projo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;script&gt;</projo><br>
 
 
 
